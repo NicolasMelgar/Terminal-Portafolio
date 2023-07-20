@@ -109,3 +109,12 @@ input:focus {
         width: 100%;
     }
 }
+
+@media (max-width: 350px) {
+    main {
+        width: 100%;
+    }
+    body{
+        font-size: 12px;
+    }
+}
