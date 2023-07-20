@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio terminal</title>
+    <script src="main.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="estilo.css" />
+</head>
+
+<body>
+    <main>
+        <div class="header"> PowerMe - Nicolás Melgar Portafolio</div>
+        <div class="terminal" id="terminalWindow">
+            <section id="terminal">
+                <div class="command">Successful login - <span class="error" id="date"></span></div>
+                <div class="title">Mi Portfolio <br> (You are logging in as a guest-user)</div>
+                Hola! Bienvenidos a mi portfolio, para ver la lista de commandos ingresá <span
+                    class="command">help</span>
+            </section>
+            <div class="prompt">
+                <span class="command">$</span> <span class="title">{guest-user}: </span> <input id="promtInput" />
+            </div>
+        </div>
+    </main>
+    <div class="hidden" id="promptClone">
+        <span class="command">$</span> <span class="title">guest-user</span> <span class="promtCloneInput"></span>
+        <div class="promtCloneContent"></div>
+    </div>
+    <div class="hidden" id="help">
+        <div class="sectionTitle">Podes ingresar cualquiera de estos comandos: </div>
+        <div class="indent">
+            <div>
+                <span class="command">about</span>:
+                <div class="indent">Sobre mi</div>
+            </div>
+            <div>
+                <span class="command">social</span>:
+                <div class="indent">Listado de mis redes sociales</div>
+            </div>
+            <div>
+                <span class="command">skills</span>:
+                <div class="indent">Las herramientas con las que trabajo</div>
+            </div>
+            <div>
+                <span class="command">education</span>:
+                <div class="indent">Todo sobre mi formación</div>
+            </div>
+            <div>
+                <span class="command">experience</span>:
+                <div class="indent">Donde trabajé hasta ahora</div>
+            </div>
+            <div>
+                <span class="command">projects</span>:
+                <div class="indent">Un listado de mis proyectos</div>
+            </div>
+            <div>
+                <span class="command">clear</span>:
+                <div class="indent">Borrar el historial de la terminal</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hidden" id="projects">
+        <div class="sectionTitle">Proyectos: </div>
+        <div class="indent">
+            <span class="title">Mi último portafolio</span> - <a href="https://nicolasmelgar.github.io/Portafolio/" target="_blank"><span
+                    class="command">Link a github</span> </a>
+        </div>
+        <div class="indent">
+            <span class="title">Proyectos breves en Javascript</span> - <a href="https://nicolasmelgar.github.io/Cuatro-Proyectos-Con-Javascript/" target="_blank"><span
+                    class="command">Link a github</span> </a>
+        </div>
+        <div class="indent">
+            <span class="title">Página con Bootstrap</span> - <a href="https://nicolasmelgar.github.io/WebBootstrap-2/" target="_blank"><span
+                    class="command">Link a github</span> </a>
+        </div>
+    </div>
+
+    <div class="hidden" id="skills">
+        <div class="sectionTitle">Skills: </div>
+        <div class="indent">
+            <div>
+                <span class="command">Programacion</span>:
+                <div class="indent">
+                    <span class="title">Javascript</span>
+                    <span class="title">CSS</span>
+                    <span class="title">HTML</span>
+                    <span class="title">GIT</span>
+                    <span class="title">(React: setiembre 2023)</span>
+                </div>
+            </div>
+            <div>
+                <span class="command">Diseño</span>:
+                <div class="indent">
+                    <span class="title">Canva</span>
+                    <span class="title">Photoshop</span>
+                </div>
+            </div>
+            <div>
+                <span class="command">Otras</span>:
+                <div class="indent">
+                    <span class="title">Trabajo en equipo</span>
+                    <span class="title">Capacidad de aprendizaje</span>
+                    <span class="title">Escucha atenta</span>
+                    <span class="title">Gestión de tiempos</span>
+                </div>
+            </div>
+            <div>
+                <span class="command">Idiomas</span>:
+                <div class="indent">
+                    <span class="title">Español - Nativo</span> <br>
+                    <span class="title">Inglés - Intermedio</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hidden" id="about">
+        <div class="sectionTitle">Sobre mi: </div>
+        <div class="indent">
+            Hola! mi nombre es <span class="command">Nicolás Melgar</span>
+            He visto la internet desde las primeras conexiones por teléfono de línea. El avance que ha tenido me parece increíble y no he podido dejar que querer aprender cómo se ha logrado. Antes un arquitecto construía en el mundo real, ahora se lo puede hacer en el mundo virtual. Sin embargo, el vértigo de semejante transformación conlleva implícita la actualización permanente, y eso me encanta. Hace varias décadas iniciar un sistema operativo con un disco de booteo era épico y Wikipedia impresionante. Ahora crear un sitio web es una realidad y el futuro es una posibilidad infinita.
+        </div>
+    </div>
+
+    <div class="hidden" id="experience">
+        <div class="sectionTitle">Experiencia: </div>
+        <div class="indent">
+            <span class="title">Desarrollador web freelance</span> - <span class="command">Junio 2021 - Actualidad</span>
+            <div class="indent">
+                Desarrollo de sitios web para clientes particulares <br>
+                Optimización y mantenimiento de código. <br>
+                Trabajo freelance. <br>
+                Part-time Remoto.
+            </div>
+        </div>
+        <div class="indent">
+            <span class="title">Profesor Primaria / secundario </span> - <span class="command">Enero 2020 - Actualidad</span>
+            <div class="indent">
+                Desempeño con grado a cargo en multinivel. <br>
+                Educación rural y a distancia como modalidades principales. <br>
+                Rio Negro - Argentina
+            </div>
+        </div>
+        <div class="indent">
+            <span class="title">Instructor de ajedrez</span> - <span class="command">Marzo 2021 - Actualidad </span>
+            <div class="indent">
+                Clases de ajedrez para alumnos de primaria. <br>
+                Rango de edad: 6 - 12 años <br>
+                Rio Negro - Argentina
+            </div>
+        </div>
+    </div>
+
+    <div class="hidden" id="social">
+        <div class="sectionTitle">Redes sociales: </div>
+        <div class="indent">
+            <span class="title">Github : </span> <br>
+            <a class="command" target="_blank" href="https://github.com/NicolasMelgar"> <span class="command">https://github.com/NicolasMelgar</span></a>
+        </div>
+        <div class="indent">
+            <span class="title">LinkedIn : </span> <br>
+            <a target="_blank" class="command" href="https://www.linkedin.com/in/nicol%C3%A1s-melgar/"><span class="command">https://www.linkedin.com/in/nicol%C3%A1s-melgar/</span></a> 
+        </div>
+        <div class="indent">
+            <span class="title">YouTube : </span> <br> 
+            <a target="_blank" class="command" href="https://www.youtube.com/channel/UCL3P7mSnAlcI4cWkn4Hp_7Q"> <span class="command">https://www.youtube.com/channel/UCL3P7mSnAlcI4cWkn4Hp_7Q</span></a>
+        </div>
+    </div>
+
+    <div class="education hidden" id="education">
+        <div class="sectionTitle">Formación: </div>
+        <div class="indent">
+            <span class="title">Javascript - Coderhouse</span> <span class="command">Cursando 2023</span>
+            <div class="indent">
+                Segundo curso de la carrera de desarrollo frontend react. 
+                Finaliza setiembre 2023.
+            </div>
+        </div>
+        <div class="indent">
+            <span class="title">Desarrollo Web Flex - Coderhouse</span> <span class="command">Finalizado 2023</span>
+            <div class="indent">
+                Primer curso de la carrera de desarrollo frontend react. 
+                Mención Top 10 en la comisión.
+            </div>
+        </div>
+        <div class="indent">
+            <span class="title">Licenciado en Educación - Universidad</span> <span class="command">Finalizado 2018</span>
+            <div class="indent">
+                Licenciatura obtenida en la Universidad FASTA. <br>
+                Requisitos previos: Título de Profesor. 
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
